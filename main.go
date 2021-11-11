@@ -20,10 +20,12 @@ func multiply(a, b int) int{
 // 	return len(name), strings.ToLower(name);
 // 	}
 
-func lenAndUpper(name string)(length int,uppercase string){
+func lenAndUpper(name string)(length int, uppercase string){
+	//defer이라는 기능은 func이 끝났을 때 추가적으로 무엇인가 동작 할 수 있도록 할 수 있다. 
+	defer fmt.Println("I'm done") //function끝나고 나서 코드 실행!
     length = len(name);    //위에처럼 Length, upperacse를 작성해주면 저것을 return할것이라고 명시되어있는 것과 같다. naked return
 	uppercase = strings.ToUpper(name)   //naked return 내가 직점 무엇을 리턴할 것인지를 명시하지 않아도 됩니다.
-	return 
+	return length, uppercase;
 }
 
 func repeatMe(words ...string) {
@@ -49,4 +51,4 @@ func main() {
 }
 
 
-//defer이라는 기능은 func이 끝났을 때 추가적으로 무엇인가 동작 할 수 있도록 할 수 있다. 
+
