@@ -32,23 +32,49 @@ func repeatMe(words ...string) {
 	fmt.Println(words)
 }
 
-func main() {
+// func main() {
 	
-	// const name string = "nico"
+// 	// // const name string = "nico"
 
-	//name := "123" // === var name string = "nico"
+// // 	//name := "123" // === var name string = "nico"
 
-    totalLenght, upperName := lenAndUpper("sia")
-	fmt.Println(totalLenght,upperName);
+// //     totalLenght, upperName := lenAndUpper("sia")
+// // 	fmt.Println(totalLenght,upperName);
    
+// // 	// repeatMe("nico","lynn","dal","marl","flynn")
 
-  
-
-	
-
-	// repeatMe("nico","lynn","dal","marl","flynn")
-
-}
+// }
 
 
+
+//============================= roop =================================
+
+//for에 대해서 공부해 보자구요! 
+// func superAdd(numbers ...int) int {
+//     //roop을 만드는 방법.
+// 	// for index, number := range numbers{
+// 	// 	fmt.Println(index,number)
+// 	// }
+
+// 	// for i := 0; i<len(numbers); i++{
+// 	// 	fmt.Println(numbers[i])
+// 	// }
+
+// 	total := 0;
+// 	//_이부분은 index를 ignore하는 부분입니다.
+// 	for _, number := range numbers{
+// 		total += number
+// 	}
+
+// 	return total
+// }
+
+// func main(){
+// result := superAdd(1,2,3,4,5,6);
+
+// fmt.Println(result)
+// }
+
+
+//============================= roop end-- =================================
 
