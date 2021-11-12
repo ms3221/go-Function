@@ -49,22 +49,22 @@ func repeatMe(words ...string) {
 
 //============================= roop =================================
 
-//for에 대해서 공부해 보자구요! 
+// //for에 대해서 공부해 보자구요! 
 // func superAdd(numbers ...int) int {
 //     //roop을 만드는 방법.
 // 	// for index, number := range numbers{
 // 	// 	fmt.Println(index,number)
 // 	// }
 
-// 	// for i := 0; i<len(numbers); i++{
-// 	// 	fmt.Println(numbers[i])
-// 	// }
+// 	for i := 0; i<len(numbers); i++{
+// 		fmt.Println(numbers[i])
+// 	}
 
 // 	total := 0;
 // 	//_이부분은 index를 ignore하는 부분입니다.
-// 	for _, number := range numbers{
-// 		total += number
-// 	}
+// 	// for _, number := range numbers{
+// 	// 	total += number
+// 	// }
 
 // 	return total
 // }
@@ -77,4 +77,23 @@ func repeatMe(words ...string) {
 
 
 //============================= roop end-- =================================
+
+
+//============================= if/else-- =================================
+
+func canIDrink(age int) bool {
+  if koeranAge := age + 2; koeranAge < 18 {
+	  return false
+  }
+	  return true
+  
+}
+
+func main(){
+	fmt.Println(canIDrink(15))
+}
+  
+//============================= if/else end-- =================================
+
+
 
