@@ -81,19 +81,65 @@ func repeatMe(words ...string) {
 
 //============================= if/else-- =================================
 
-func canIDrink(age int) bool {
-  if koeranAge := age + 2; koeranAge < 18 {
-	  return false
-  }
-	  return true
+// func canIDrink(age int) bool {
+//   if koeranAge := age + 2; koeranAge < 18 {
+// 	  return false
+//   }
+// 	  return true
   
-}
+// }
 
-func main(){
-	fmt.Println(canIDrink(15))
-}
+// func main(){
+// 	fmt.Println(canIDrink(15))
+// }
   
 //============================= if/else end-- =================================
 
 
+//============================= switch -- =================================
+
+// func canIDrink(age int) bool {
+
+// 	switch koreanAge := age+2; koreanAge {
+// 	case 18 : 
+// 	   return false
+//     case 20 : 
+// 	   return true
+// 	case 50 :
+// 		return false
+// 	}
+
+// 	return false
+	
+//   }
+
+  
+//   func main(){
+// 	  fmt.Println(canIDrink(17))
+//   }
+
+//============================= end -- =================================
+
+
+
+//============================= pointer =================================
+
+  func main()  {
+
+	//이렇게 &하면 주소값을 찾을 수가 있어용1
+	// fmt.println(b) == 0x12341243 주소값이 생성된다. 이값을 내가 볼 수 있는 정수값으로 반환할려면 *을 붙여줍시다
+	// a의값을 업데이트해주면 b는 a의 주소값을 참조하기 때문에 같이 변합니다. 
+	// 그리고 또한 가지방법은 b의 값을 업데이트해서 a의 값을 바꾸는 건데 그건 *b = 12 이런식으로 업데이트 해주면 됩니다.
+	  a :=2
+	  b := &a
+      *b = 20;
+	 
+	  
+
+	  fmt.Println(a,*b)
+  }
+
+
+
+	//============================= end -- =================================
 
