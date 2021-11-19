@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"strings"
 
-	"github.com/jun/learngo/accounts"
+	"github.com/jun/learngo/mydict"
 )
 
 //istrue := true  함수밖에서는 될수가 없어요!!! 축약형은 오로지 함수안에서만 가능합니다
@@ -197,21 +196,39 @@ func repeatMe(words ...string) {
 
 
 //function을 이용해서 costructor을 만들고 있는 중입니다.
+// func main(){
+// 	//모듈 생성을 위해서 go mod init 를 실행해야지 모듈이 만들어진다.
+	
+	
+
+	
+   
+// 	// err := account.WithDraw(20)
+// 	// if err != nil{
+// 	// 	log.Fatalln(err)
+// 	// }
+// 	account := accounts.NewAccount("jun")
+// 	account.Deposit(10)
+//     fmt.Println(account)
+ 
+// 	//자동으로 go에서 호출해주는 메서드가 있습니다. 대표적으로 Stirng()입니다 
+// 	// func (struct) String() string
+	
+	
+// } 	
+
+
+
+
 func main(){
-	//모듈 생성을 위해서 go mod init 를 실행해야지 모듈이 만들어진다.
-	
-	account := accounts.NewAccount("jun")
-    account.Deposit(10);
-	fmt.Println(account.Balance())
-	err := account.WithDraw(20)
-	if err != nil{
-		log.Fatalln(err)
-	}
-    fmt.Println(account.Balance())
-	
-} 	
+	dictionary := mydict.Dictionary{"first":"First Word"}
+	def, err := dictionary.Search("firstt")
 
-
+	  if err != nil {
+		fmt.Println(def,err)
+	  }
+      fmt.Println(def)
+}
 
 
 

@@ -1,6 +1,9 @@
 package accounts
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+)
 
 //compile은 main에서 할꺼얌!
 
@@ -48,3 +51,38 @@ func (a *Account) WithDraw(amount int)error{
 	return nil
 	//null 이나 none같은 거에요~
 }
+
+
+
+//Change Owner of the account
+func (a *Account) ChangeOwner(newOwner string) {
+	a.owner = newOwner
+
+
+}
+
+
+//Owner of the account 
+func (a Account) Owner() string{
+	return a.owner
+}
+
+
+type Jun struct{
+	name string
+}
+
+func NewJun(name string) *Jun{
+	jun := Jun{name: name}
+
+	return &jun
+}
+
+func(j Jun) String() string{
+	return fmt.Sprint("Sprint 유형입니다!")
+}
+
+// func (a Account) String() string {
+// 	// return fmt.Sprintln(a.Owner(), "s account. \nHas ", a.Balance())
+// 	return "whatever you want"
+// }
