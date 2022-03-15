@@ -1,7 +1,4 @@
-# go_test
+### This is repository that study go-fuction 
 
 
-
-//자동으로 go에서 호출해주는 메서드가 있습니다. 대표적으로 Stirng()입니다 
-	// func (struct) String() string
-	
+### 기본적인 go언어 Function과 기본적인 API를 만들어 보도록 하겠습니다.
